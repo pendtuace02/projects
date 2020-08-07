@@ -1,104 +1,67 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title> HTML Cheat Sheat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="afford web design">
+    <meta name="words" content="web design, affordable">
+    <meta name="author" content="EvelynThai Nguyen">
+    <title>Acme Web Design | Welcome</title>
+    <link rel="styleshee" href="./css.style.css">
   </head>
   <body>
-    <!--heading-->
-    <h1>Heading one</h1>
-    <h2>heading two</h2>
-    <h3>heading two</h3>
+    <header>
+        <div class="container">
+          <div id="branding">
+            <!-- could a logo in id-->
+            <h1>Acme Web Design</h1>
+          </div>
+        <nav>
+          <ul>
+            <!--which is used for menu-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+        </nav>
+       </div>
+    </header>
 
-    <!--paragraph-->
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure <em>dolor in reprehenderit in voluptate velit </em> esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, <a href="http://google.com" target="_blank">sunt in culpa qui officia deserunt mollit </a>anim id est laborum.
-    </p>
-
-    <!--List-->
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-      <li>item 4</li>
-    </ul>
-
-    <!--table-->
-    <table>
-      <thead>
-        <tbody>
-          <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Age</th>
-            </tr>
-        </tbody>
-          <tr>
-            <td>evelyn nguyen</td>
-            <td>evelyn@something.com</td>
-            <td>35</td>
-          </tr>
-      </thead>
-    </table>
-
-    <br>
-    <hr>
-
-    <!--form-->
-      <div>
-      <form action="process.php" method="POST">
-        <label>First Name</label>
-        <input input="text" name="first-name">
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Proffesional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <br>
-      <div>
-        <label>Last Name</label>
-        <input input="text" name="Last-name">
+    </section>
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subcribe to our newsletter</h1>
+          <form>
+            <input type="email" placeholder="Enter Email..">
+            <button type="submit" class="button_1">Subcribe</button>
+          </form>
       </div>
-      <div>
-        <lable>Message</lable>
-        <textarea name="message"></textarea>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+            <img src="./images/HTML LOGO.png">
+            <h3>HTML5 markup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="box">
+            <img src="./images/CSS3.png">
+            <h3>CSS styling</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="box">
+            <img src="./images/graphic design.png">
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
       </div>
-      <br>
-      <div>
-          <lable>Gender</lable>
-          <select name="Gender">
-            <option vaule="male">Male</option>
-            <option vaule="female">female</option>
-            <option vaule="Others">Others</option>
-          </select>
-      </div>
-     </form>
+    </section>
 
-      <!--button-->
-      <button>Click Me</button>
-
-      <!--image-->
-      <img src="download.jpeg" alt="bird in front of sunset">
-
-      <!--Quotaton-->
-      <blockquote cite="http://google.com">
-        Lorem 
-      </blockquote>
-
-      <p> The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
-
-      <p><cite>HTML crash course</cite> by Brad</p>
-
-
+    <footer
+        <p>Acme Web Design, Copyright &copy; 2020</p>
+    </footer>
   </body>
 </html>
